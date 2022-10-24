@@ -1,0 +1,318 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 24px 0;
+}
+header > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header > .container > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header > .container > nav > .logo {
+  margin-right: 100px;
+}
+header > .container > nav > .logo > img {
+  width: 200px;
+}
+header > .container > nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header > .container > nav > ul > li:not(:last-child) {
+  margin-right: 30px;
+}
+header > .container > nav > ul > li > a {
+  color: #14395b;
+  font-size: 20px;
+}
+header > .container > nav > ul > li > a:hover {
+  color: #2289ff;
+}
+header > .container > .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header > .container > .actions > .search {
+  position: relative;
+  margin-right: 30px;
+}
+header > .container > .actions > .search > input {
+  border: 1px dashed black;
+  border-radius: 18px;
+  padding: 10px 20px 10px 30px;
+  outline: none;
+}
+header > .container > .actions > .search::before {
+  content: url("../../images/search.svg");
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header > .container > .actions > .notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+  margin-right: 30px;
+  width: 62px;
+  height: 62px;
+  background-color: rgba(34, 137, 255, 0.22);
+  border-radius: 100%;
+  position: relative;
+}
+header > .container > .actions > .notification .notification-circle {
+  width: 18px;
+  height: 18px;
+  background-color: #fe7847;
+  border-radius: 100%;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+header > .container > .actions button {
+  cursor: pointer;
+  background-color: #2289ff;
+  padding: 14px 54px;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.s-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+.s-1 .container .content {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+}
+.s-1 .container .content .main-title {
+  width: 50%;
+  background-color: white;
+  height: 300px;
+  border-top-right-radius: 76px;
+  border-bottom-right-radius: 76px;
+  padding: 30px;
+  box-shadow: 1px 2px 44px -17px rgba(120, 120, 120, 0.75);
+  -webkit-box-shadow: 1px 2px 44px -17px rgba(120, 120, 120, 0.75);
+  -moz-box-shadow: 1px 2px 44px -17px rgba(120, 120, 120, 0.75);
+  margin-bottom: 70px;
+}
+.s-1 .container .content .main-title h1 {
+  font-size: 88px;
+  font-weight: 700;
+  color: #2289ff;
+  margin-bottom: 38px;
+}
+.s-1 .container .content .main-title h1 span {
+  color: #186aa5;
+}
+.s-1 .container .content .main-title p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.s-1 .container .content .filter .buttons button {
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.s-1 .container .content .filter .buttons button:not(:last-child) {
+  margin-right: 20px;
+}
+.s-1 .container .content .filter .buttons button.active {
+  background-color: #2289ff;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.s-1 .container .content .filter .filter-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  padding: 25px 45px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 1px 2px 44px -17px rgba(120, 120, 120, 0.75);
+  -webkit-box-shadow: 1px 2px 44px -17px rgba(120, 120, 120, 0.75);
+  -moz-box-shadow: 1px 2px 44px -17px rgba(120, 120, 120, 0.75);
+}
+.s-1 .container .content .filter .filter-bar .filter-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.s-1 .container .content .filter .filter-bar .filter-items .filter-item:not(:last-child) {
+  margin-right: 80px;
+}
+.s-1 .container .content .filter .filter-bar .filter-items .filter-item .title {
+  color: #8D9598;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.s-1 .container .content .filter .filter-bar .filter-items .filter-item .value {
+  font-size: 30px;
+  font-weight: 700;
+  color: #186AA5;
+}
+.s-1 .container .content .filter .filter-bar .actions .light {
+  cursor: pointer;
+  font-size: 22px;
+  color: #186AA5;
+  margin-right: 20px;
+  border: none;
+  background: transparent;
+}
+.s-1 .container .content .filter .filter-bar .actions .primary {
+  cursor: pointer;
+  background-color: #2289FF;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 60px;
+  color: white;
+  font-size: 22px;
+}
+.s-1 .container > img {
+  border-radius: 48px;
+  width: 75%;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}/*# sourceMappingURL=global.css.map */
